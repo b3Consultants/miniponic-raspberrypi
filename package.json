@@ -1,0 +1,28 @@
+{
+  "name": "miniponic-pi",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "imageurl-base64": "^1.0.0",
+    "jsdoc": "^3.5.4",
+    "serialport": "^6.0.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.6",
+    "supertest": "^2.0.1"
+  }
+}
