@@ -11,7 +11,7 @@ function takePicture() {
     if (error) return;
     axios.post(url, { photo: photo.base64 })
       .catch((err) => {
-        console.log(err.response.statusText);
+        console.error(new Date(), err.response.statusText);
       });
   });
 }
