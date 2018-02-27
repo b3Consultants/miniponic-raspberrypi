@@ -21,10 +21,10 @@ function upload(data) {
     const url = `${miniponic.SERVER}/data/savData/${miniponic.MINIPONIC_ID}`;
     axios.post(url, toDatabase)
     .then(() => {
-      console.log('Success!');
+      console.log(new Date(), 'Success!');
     })
     .catch((error) => {
-      console.log(error.response.status, error.response.statusText);
+      console.error(new Date(), error.response.status, error.response.statusText);
     });
   }
 }
