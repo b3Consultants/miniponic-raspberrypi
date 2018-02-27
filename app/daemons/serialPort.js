@@ -37,7 +37,7 @@ function handleMessages() {
   parser.on('data', function (data) {
     const rawMessage = data;
     const message = parse(rawMessage);
-    console.log(message)
+    console.log(new Date(), message);
     tempdata.add(message);
   })
 }
